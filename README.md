@@ -12,29 +12,33 @@ If you want to use the [Updater] to distribute Jython packages and modules, it c
 The prerequisite for using this template is to have maven installed. Afterwards only four steps will allow you to use [batch_opener.py].
 
 1. Clone this repository.
-```
-git clone git@github.com:m-entrup/imagej-jython-package.git
-```
+
+	```
+	git clone git@github.com:m-entrup/imagej-jython-package.git
+	```
 1. Create the jar file by running maven.
-```
-cd imagej-jython-package.git
-mvn package
-```
+
+	```
+	cd imagej-jython-package.git
+	mvn package
+	```
 1. Copy the jar file to ``jars/Lib``. ``Lib`` may not exist, yet.
-```
-mkdir path-to-ImageJ/jars/Lib
-cp target/imagej-jython-package-0.1.0-SNAPSHOT.jar path-to-ImageJ/jars/Lib/
-```
+
+	```
+	mkdir path-to-ImageJ/jars/Lib
+	cp target/imagej-jython-package-0.1.0-SNAPSHOT.jar path-to-ImageJ/jars/Lib/
+	```
 1. Start ImageJ and run the following Jython script.
-```
-# @File(label='Choose a directory', style='directory') import_dir
 
-from examplePackage import batch_opener
+	```
+	# @File(label='Choose a directory', style='directory') import_dir
 
-images = batch_opener.batch_open_images(import_dir, recursive=True)
-for image in images:
-	print(image)
-```
+	from examplePackage import batch_opener
+
+	images = batch_opener.batch_open_images(import_dir, recursive=True)
+	for image in images:
+		print(image)
+	```
 
 [Updater]: http://imagej.net/Updater
 [batch_opener.py]: http://imagej.net/Jython_Scripting#A_batch_opener_using_os.walk.28.29
