@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>16.6.0</version>
+		<relativePath />
+</parent>
+
+<groupId>net.imagej</groupId>
+<artifactId>imagej-jython-package</artifactId>
+<version>0.1.0-SNAPSHOT</version>
+<packaging>jar</packaging>
+
+<name>imagej-jython-package</name>
+<description>A minimal envirement to package a Jython package with maven.</description>
+<url>http://imagej.net/jython_scripting</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+</dependencies>
+
+	<developers>
+		<developer>
+			<id>m-entrup</id>
+			<name>Michael Entrup</name>
+			<email>mail@m-entrup.de</email>
+			<url>https://m-entrup.de</url>
+		</developer>
+</developers>
+
+<repositories>
+	<repository>
+		<id>imagej.public</id>
+		<url>http://maven.imagej.net/content/groups/public</url>
+	</repository>
+</repositories>
+</project>
