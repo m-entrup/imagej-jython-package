@@ -13,24 +13,24 @@ The prerequisite for using this template is to have maven installed. Afterwards 
 
 1. Clone this repository.
 
-	```
+	```Bash
 	git clone git@github.com:m-entrup/imagej-jython-package.git
 	```
 1. Create the jar file by running maven.
 
-	```
+	```Bash
 	cd imagej-jython-package.git
 	mvn package
 	```
 1. Copy the jar file to ``jars/Lib``. ``Lib`` may not exist, yet.
 
-	```
+	```Bash
 	mkdir path-to-ImageJ/jars/Lib
 	cp target/imagej-jython-package-0.1.0-SNAPSHOT.jar path-to-ImageJ/jars/Lib/
 	```
 1. Start ImageJ and run the following Jython script.
 
-	```
+	```Python
 	# @File(label='Choose a directory', style='directory') import_dir
 
 	from examplePackage import batch_opener
