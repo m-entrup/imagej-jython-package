@@ -20,7 +20,7 @@ The prerequisite for using this template is to have maven installed. Afterwards 
 
 	```Bash
 	cd imagej-jython-package.git
-	mvn jar:jar
+	mvn package
 	```
 1. Copy the jar file to ``jars/Lib``. ``Lib`` may not exist, yet.
 
