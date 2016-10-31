@@ -1,5 +1,5 @@
 # imagej-jython-package
-A minimal environment to package a Jython modules with maven.
+A minimal environment to package Jython modules with maven.
 
 ## Motivation
 
