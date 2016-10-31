@@ -17,7 +17,7 @@
 <packaging>jar</packaging>
 
 <name>imagej-jython-package</name>
-<description>A minimal envirement to package a Jython package with maven.</description>
+<description>A minimal envirement to package a Jython modules with maven.</description>
 <url>http://imagej.net/jython_scripting</url>
 
 	<dependencies>
