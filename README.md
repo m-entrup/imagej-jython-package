@@ -3,7 +3,7 @@ A minimal environment to package Jython modules with maven.
 
 ## Motivation
 
-With ImageJ it is possible to use self written Jython modules to extend the functionality. Packages and modules can be placed at the directory ``jars/Lib``. ImageJ's Jython is configured to add ``jars/Lib`` to the default search path for packages and modules.
+With ImageJ it is possible to use self written Jython modules to extend the functionality. Packages and modules can be placed at the directory `jars/Lib`. ImageJ's Jython is configured to add `jars/Lib` to the default search path for packages and modules.
 
 If you want to use the [Updater] to distribute Jython packages and modules, it can be handy pack these files as a singe Jar file. As mavens is designed to create Jar files, it can be used to automate the packaging. This repository is a template for a maven project to achieve the given goal.
 
@@ -14,7 +14,7 @@ The prerequisite for using this template is to have maven installed. Afterwards 
 1. Clone this repository.
 
 	```Bash
-	git clone git@github.com:m-entrup/imagej-jython-package.git
+	git clone git@github.com:m-entrup/imagej-jython-package
 	```
 1. Create the jar file by running maven.
 
@@ -22,10 +22,10 @@ The prerequisite for using this template is to have maven installed. Afterwards 
 	cd imagej-jython-package.git
 	mvn package
 	```
-1. Copy the jar file to ``jars/Lib``. ``Lib`` may not exist, yet.
+1. Copy the jar file to `jars/Lib`. `Lib` may not exist, yet.
 
 	```Bash
-	mkdir path-to-ImageJ/jars/Lib
+	mkdir -p path-to-ImageJ/jars/Lib
 	cp target/imagej-jython-package-0.1.0-SNAPSHOT.jar path-to-ImageJ/jars/Lib/
 	```
 1. Start ImageJ and run the following Jython script.
