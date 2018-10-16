@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -9,36 +9,36 @@
 		<artifactId>pom-imagej</artifactId>
 		<version>16.6.0</version>
 		<relativePath />
-</parent>
+	</parent>
 
-<groupId>net.imagej</groupId>
-<artifactId>imagej-jython-package</artifactId>
-<version>0.1.0-SNAPSHOT</version>
-<packaging>jar</packaging>
+	<groupId>net.imagej</groupId>
+	<artifactId>imagej-jython-package</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-<name>imagej-jython-package</name>
-<description>A minimal environment to package Jython modules with maven.</description>
-<url>http://imagej.net/jython_scripting</url>
+	<name>imagej-jython-package</name>
+	<description>A minimal environment to package Jython modules with maven.</description>
+	<url>http://imagej.net/jython_scripting</url>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
 		</dependency>
-</dependencies>
+	</dependencies>
 
-<build>
-	<plugins>
-		<!-- Do not generate a source jar -->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-source-plugin</artifactId>
-			<configuration>
-				<skipSource>true</skipSource>
-			</configuration>
-		</plugin>
-	</plugins>
-</build>
+	<build>
+		<plugins>
+			<!-- Do not generate a source jar -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<skipSource>true</skipSource>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<developers>
 		<developer>
@@ -47,12 +47,12 @@
 			<email>mail@m-entrup.de</email>
 			<url>https://m-entrup.de</url>
 		</developer>
-</developers>
+	</developers>
 
-<repositories>
-	<repository>
-		<id>imagej.public</id>
-		<url>http://maven.imagej.net/content/groups/public</url>
-	</repository>
-</repositories>
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
 </project>
